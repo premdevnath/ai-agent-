@@ -8,19 +8,18 @@ Author: Satya Sai Prakash Kantamani
 GitHub: https://github.com/kantamaniprakash
 """
 
-import os
 import html
-import streamlit as st
 from pathlib import Path
 
-# LangChain imports
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain_community.document_loaders import PyMuPDFLoader
-from langchain_chroma import Chroma
 import chromadb
+import streamlit as st
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferWindowMemory
 from langchain.prompts import PromptTemplate
+from langchain_chroma import Chroma
+
+# LangChain imports
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 from chunking import chunk_documents
 

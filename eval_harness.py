@@ -25,15 +25,15 @@ Usage:
     python eval_harness.py --k 3 --output results.json
 """
 
+import argparse
+import json
 import os
 import sys
-import json
-import argparse
 from statistics import mean
 
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 # ─── Fixture Corpus ─────────────────────────────────────────────────────────
 # Synthetic financial-report passages, each tagged with a stable chunk_id so
