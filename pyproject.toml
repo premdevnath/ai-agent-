@@ -21,7 +21,7 @@ dependencies = [
     "posthog>=2.4.0,<6",                # chromadb 0.6.x telemetry is incompatible with posthog 6+ (log spam)
     "openai==1.109.1",
     "streamlit==1.58.0",                # >=1.54.0: CVE-2026-33682, CVE-2026-10804
-    "pymupdf==1.28.0",
+    "pymupdf==1.28.2",
     "tiktoken==0.13.0",
     "pydantic==2.13.4",
     "pillow>=12.2.0",                   # security floor (transitive via streamlit): 3 high CVEs
