@@ -13,7 +13,7 @@ dependencies = [
     "langchain==0.3.30",
     "langchain-core==0.3.86",           # >=0.3.85: CVE-2025-68664, CVE-2026-44843, CVE-2025-65106, CVE-2026-40087
     "langchain-openai==0.3.35",
-    "langchain-community==0.3.31",      # >=0.3.27: CVE-2025-6984
+    "langchain-community==0.4.2",      # >=0.3.27: CVE-2025-6984
     "langchain-chroma==0.2.3",          # kept at 0.2.3: 0.2.4+ force chromadb>=1.0.9 (CVE-2026-45829, unfixed)
     "langchain-text-splitters==0.3.11", # >=0.3.9: CVE-2025-6985
     "langsmith>=0.8.18",                # security floor (transitive via langchain-core)
